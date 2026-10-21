@@ -21,7 +21,7 @@ nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);border-bot
 .name-row{display:flex;align-items:flex-end;gap:22px;flex-wrap:wrap}.name-row h1{color:var(--navy);font-size:clamp(3.2rem,7vw,6rem);line-height:.95;letter-spacing:-.065em}
 .school-logos{display:flex;gap:10px;padding-bottom:7px}.school-logo{width:64px;height:50px;display:grid;place-items:center}.school-logo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
 .hero h2{font-size:clamp(1.15rem,2vw,1.55rem);font-weight:500;color:var(--muted);max-width:700px;margin-top:24px}
-.buttons{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;font-weight:750;font-size:.88rem;border:1px solid var(--navy);transition:.2s}.btn.primary{background:var(--navy);color:#fff}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(11,31,51,.12)}
+.buttons{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;font-weight:750;font-size:.88rem;border:1px solid var(--navy);transition:.2s}.btn.primary{background:var(--navy);color:#fff}.btn.disabled{opacity:.48;cursor:not-allowed;border-color:var(--line);color:var(--muted);background:#f5f7f8}.btn.disabled:hover{transform:none;box-shadow:none}.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(11,31,51,.12)}
 .portrait{width:min(100%,300px);height:390px;justify-self:end;border-radius:22px;overflow:hidden;position:relative;background:linear-gradient(160deg,var(--navy),#174f73);box-shadow:0 28px 70px rgba(11,31,51,.18);display:grid;place-items:center;color:rgba(255,255,255,.5);text-align:center;font-weight:750}.portrait span{padding:20px}.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
 section{padding:96px 0}.section-head{display:grid;grid-template-columns:220px 1fr;gap:40px;margin-bottom:50px}.section-num{color:var(--blue);font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.section-head h2{color:var(--navy);font-size:clamp(2rem,4vw,3.15rem);letter-spacing:-.045em;line-height:1.05}.section-head p{color:var(--muted);margin-top:15px;max-width:760px}
 .profile-grid{display:grid;grid-template-columns:1fr;gap:30px}.profile-grid>p{max-width:860px;font-size:1.04rem}.profile-grid>p{color:var(--muted);font-size:1.02rem}.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}.fact{padding:21px;border:1px solid var(--line);border-radius:12px}.fact strong{display:block;color:var(--navy);font-size:1.1rem}.fact span{font-size:.82rem;color:var(--muted)}
@@ -50,7 +50,7 @@ footer{background:#071725;color:#8fa2b1;padding:24px 0;font-size:.8rem}
 <div class="hero-topline"><span class="eyebrow">Engineering Portfolio · 2026</span><span class="availability"><span class="status-dot" aria-hidden="true"></span>Available from Feb. 2027 · 6-month internship</span></div>
 <div class="name-row"><h1>Marine<br>Rebeyrat</h1><div class="school-logos"><div class="school-logo"><img src="images/logos/estaca.png" alt="ESTACA"></div><div class="school-logo"><img src="images/logos/npu.png" alt="NPU"></div></div></div>
 <h2>Engineering student interested in naval architecture, experimental testing and advanced mechanical systems.</h2>
-<div class="buttons"><a class="btn primary" href="cv/CV_Marine_Rebeyrat_EN.pdf" download>CV — English ↓</a><a class="btn" href="cv/CV_Marine_Rebeyrat_FR.pdf" download>CV — Français ↓</a><a class="btn" href="mailto:">Contact me ↗</a><a class="btn" href="#" target="_blank" rel="noopener">LinkedIn ↗</a></div>
+<div class="buttons"><span class="btn disabled" title="English CV coming soon">CV — English · soon</span><a class="btn" href="cv/CV_Marine_Rebeyrat_FR.pdf" download>CV — Français ↓</a><a class="btn" href="mailto:marine.rebeyrat@estaca.eu">Contact me ↗</a><a class="btn" href="https://www.linkedin.com/in/marine-rebeyrat" target="_blank" rel="noopener">LinkedIn ↗</a></div>
 </div><div class="portrait"><img src="images/portrait/marine-rebeyrat.png" alt="Marine Rebeyrat"></div></div></header>
 
 <main>
@@ -97,7 +97,7 @@ footer{background:#071725;color:#8fa2b1;padding:24px 0;font-size:.8rem}
 <div class="skill-card"><h3>Experimental & Naval</h3><p>Hydrodynamic Testing · Towing Tank Testing · Composite Materials · Structural Sizing</p></div>
 </div></div></section>
 
-<section id="contact"><div class="container"><div class="section-head"><div class="section-num">07 — CONTACT</div><div><h2>Contact</h2></div></div><div class="contact-links"><a href="mailto:marine.rebeyrat@...">marine.rebeyrat@...</a><a href="#">LinkedIn</a><a href="#">CV ↗</a></div></div></section>
+<section id="contact"><div class="container"><div class="section-head"><div class="section-num">07 — CONTACT</div><div><h2>Contact</h2></div></div><div class="contact-links"><a href="mailto:marine.rebeyrat@estaca.eu">marine.rebeyrat@estaca.eu</a><a href="https://www.linkedin.com/in/marine-rebeyrat" target="_blank" rel="noopener">LinkedIn ↗</a><a href="cv/CV_Marine_Rebeyrat_FR.pdf" target="_blank" rel="noopener">CV — Français ↗</a></div></div></section>
 </main>
 <footer><div class="container">© 2026 Marine Rebeyrat · Engineering Portfolio</div></footer>
 <script>
