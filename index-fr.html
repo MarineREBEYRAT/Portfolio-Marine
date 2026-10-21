@@ -60,6 +60,42 @@ footer{background:#071725;color:#8fa2b1;padding:24px 0;font-size:.8rem}
   .timeline-card .details-grid{grid-template-columns:1fr!important}
   .timeline-card .exp-image{max-width:none}
 }
+
+/* V9 — Experience layout: 45% text / 55% large visual */
+#experience .detail-inner{
+  grid-template-columns:minmax(0, .82fr) minmax(0, 1fr);
+  gap:36px;
+  align-items:start;
+}
+#experience .exp-image{
+  width:100%;
+  min-height:0;
+  aspect-ratio:16/9;
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+}
+#experience .exp-image img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+#experience .timeline-card.open .details{
+  max-height:1600px;
+}
+@media(max-width:900px){
+  #experience .detail-inner{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+  #experience .exp-image{
+    width:100%;
+  }
+}
+
 </style></head>
 <body>
 <nav><div class="container nav-inner">
@@ -98,7 +134,7 @@ footer{background:#071725;color:#8fa2b1;padding:24px 0;font-size:.8rem}
 <div class="details"><div class="detail-inner"><div><p><strong>Développement ciblé d'un environnement de modélisation 3D appliqué au secteur de l'énergie dans le cadre du projet R&D PANDORA.</strong></p><br><p>Au cours de ce stage, j'ai travaillé sur le développement d'environnements 3D interactifs à l'aide de TypeScript, Babylon.js et Blender. Mon projet principal portait sur la représentation numérique d'une station de ravitaillement en hydrogène et sur l'intégration de fonctionnalités liées à la sûreté, à la surveillance et à la cybersécurité.</p><br><p>J'ai notamment reproduit une station hydrogène industrielle à partir de plans techniques, intégré la localisation et les données de différents capteurs, puis développé plusieurs fonctionnalités interactives : identification des équipements, simulation d'une fuite d'hydrogène, arrêt d'urgence d'un compresseur et visualisation des flux de caméras de surveillance.</p><br><p>Ce projet m'a permis d'associer modélisation 3D, programmation et visualisation de données industrielles au sein d'un environnement international de R&D.</p><div class="tags"><span class="tag">TypeScript</span><span class="tag">Babylon.js</span><span class="tag">Blender</span><span class="tag">Modélisation 3D</span></div><a class="report" href="#">Voir le rapport de stage ↗</a></div><div class="exp-image"><img src="images/experience/framatome-portfolio.jpg" alt="Framatome hydrogen station 3D modelling project"></div></div></div>
 </div></div><div class="timeline-entry"><div class="timeline-card">
 <div class="timeline-top"><div class="timeline-date">Juil. 2025</div><div><h3>Stage en bureau d'études — CT Mer Forte</h3><div class="sub">Port-La-Forêt, France</div></div><button class="plus" aria-label="More details">+</button></div>
-<div class="details"><div class="detail-inner"><div><p><strong>Application de la modélisation 3D à la conception d'un voilier de course dans le cadre du projet Classe IMER.</strong></p><br><p>Au sein du bureau d'études de CT Mer Forte, j'ai participé à la conception d'un voilier répondant aux exigences du règlement de jauge de la Classe IMER. Ma mission principale consistait à réaliser et compléter sa modélisation 3D sous 3DEXPERIENCE, en adaptant des éléments issus de projets précédents et en concevant de nouvelles pièces.</p><br><p>J'ai notamment travaillé sur la structure du voilier, la quille, le gréement, les safrans, l'accastillage et le bout-dehors. Certaines pièces, comme les safrans et le bout-dehors, ont également été paramétrées afin de reproduire leurs mouvements.</p><br><p>Cette expérience m'a permis d'approfondir ma maîtrise de la conception et de la modélisation 3D, tout en découvrant concrètement le fonctionnement d'un bureau d'études spécialisé dans l'ingénierie navale et la course au large.</p><div class="tags"><span class="tag">3DEXPERIENCE</span><span class="tag">Modélisation 3D</span><span class="tag">Conception navale</span><span class="tag">Conception paramétrique</span></div><a class="report" href="Rapport de stage Marine Rebeyrat.pdf">Voir le rapport de stage ↗</a></div><div class="exp-image"><img src="images/experience/ct-mer-forte-portfolio.png" alt="CT Mer Forte — Classe IMER"></div></div></div>
+<div class="details"><div class="detail-inner"><div><p><strong>Application de la modélisation 3D à la conception d'un voilier de course dans le cadre du projet Classe IMER.</strong></p><br><p>Au sein du bureau d'études de CT Mer Forte, j'ai participé à la conception d'un voilier répondant aux exigences du règlement de jauge de la Classe IMER. Ma mission principale consistait à réaliser et compléter sa modélisation 3D sous 3DEXPERIENCE, en adaptant des éléments issus de projets précédents et en concevant de nouvelles pièces.</p><br><p>J'ai notamment travaillé sur la structure du voilier, la quille, le gréement, les safrans, l'accastillage et le bout-dehors. Certaines pièces, comme les safrans et le bout-dehors, ont également été paramétrées afin de reproduire leurs mouvements.</p><br><p>Cette expérience m'a permis d'approfondir ma maîtrise de la conception et de la modélisation 3D, tout en découvrant concrètement le fonctionnement d'un bureau d'études spécialisé dans l'ingénierie navale et la course au large.</p><div class="tags"><span class="tag">3DEXPERIENCE</span><span class="tag">Modélisation 3D</span><span class="tag">Conception navale</span><span class="tag">Conception paramétrique</span></div><a class="report" href="reports/Rapport_Mer_Forte.pdf" target="_blank" rel="noopener">Voir le rapport de stage ↗</a></div><div class="exp-image"><img src="images/experience/ct-mer-forte-portfolio.png" alt="CT Mer Forte — Classe IMER"></div></div></div>
 </div></div></div></div></section>
 
 <section id="projects" class="alt"><div class="container"><div class="section-head"><div class="section-num">04 — Projets</div><div><h2>Projets</h2><p>Une sélection de projets techniques entre conception, simulation et expérimentation.</p></div></div><div class="projects">

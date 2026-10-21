@@ -60,6 +60,42 @@ footer{background:#071725;color:#8fa2b1;padding:24px 0;font-size:.8rem}
   .timeline-card .details-grid{grid-template-columns:1fr!important}
   .timeline-card .exp-image{max-width:none}
 }
+
+/* V9 — Experience layout: 45% text / 55% large visual */
+#experience .detail-inner{
+  grid-template-columns:minmax(0, .82fr) minmax(0, 1fr);
+  gap:36px;
+  align-items:start;
+}
+#experience .exp-image{
+  width:100%;
+  min-height:0;
+  aspect-ratio:16/9;
+  border:1px solid var(--line);
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+}
+#experience .exp-image img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+}
+#experience .timeline-card.open .details{
+  max-height:1600px;
+}
+@media(max-width:900px){
+  #experience .detail-inner{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+  #experience .exp-image{
+    width:100%;
+  }
+}
+
 </style></head>
 <body>
 <nav><div class="container nav-inner">
@@ -98,7 +134,7 @@ footer{background:#071725;color:#8fa2b1;padding:24px 0;font-size:.8rem}
 <div class="details"><div class="detail-inner"><div><p><strong>Selective development of a 3D modelling framework for the energy sector within the PANDORA R&D project.</strong></p><br><p>During this internship, I worked on the development of interactive 3D environments using TypeScript, Babylon.js and Blender. My main project focused on the digital representation of a hydrogen refuelling station and the integration of safety, monitoring and cybersecurity-related features.</p><br><p>I reproduced an industrial hydrogen station from technical plans, integrated sensor locations and data, and developed interactive features including equipment labels, hydrogen leak simulations, emergency compressor shutdown and surveillance camera monitoring.</p><br><p>The project combined 3D modelling, programming and industrial data visualisation within an international R&D environment.</p><div class="tags"><span class="tag">TypeScript</span><span class="tag">Babylon.js</span><span class="tag">Blender</span><span class="tag">3D Modelling</span></div><a class="report" href="#">View internship report ↗</a></div><div class="exp-image"><img src="images/experience/framatome-portfolio.jpg" alt="Framatome hydrogen station 3D modelling project"></div></div></div>
 </div></div><div class="timeline-entry"><div class="timeline-card">
 <div class="timeline-top"><div class="timeline-date">Jul. 2025</div><div><h3>Design Office Intern — CT Mer Forte</h3><div class="sub">Port-La-Forêt, France</div></div><button class="plus" aria-label="More details">+</button></div>
-<div class="details"><div class="detail-inner"><div><p><strong>Application of 3D modelling to the design of a racing sailing yacht as part of the Classe IMER project.</strong></p><br><p>Within the CT Mer Forte design office, I contributed to the design of a sailing yacht developed in accordance with the Classe IMER rules. My main assignment was to develop and complete the 3D model using 3DEXPERIENCE, adapting components from previous projects while also designing new parts.</p><br><p>I worked on several key components of the yacht, including the structure, keel, rigging, rudders, deck fittings and bowsprit. Some components, such as the rudders and bowsprit, were also parametrised to reproduce their movements.</p><br><p>This experience strengthened my skills in 3D design and modelling while giving me first-hand experience of the work carried out within a naval engineering design office and the offshore racing environment.</p><div class="tags"><span class="tag">3DEXPERIENCE</span><span class="tag">3D Modelling</span><span class="tag">Naval Design</span><span class="tag">Parametric Design</span></div><a class="report" href="Rapport de stage Marine Rebeyrat.pdf">View internship report ↗</a></div><div class="exp-image"><img src="images/experience/ct-mer-forte-portfolio.png" alt="CT Mer Forte — Classe IMER"></div></div></div>
+<div class="details"><div class="detail-inner"><div><p><strong>Application of 3D modelling to the design of a racing sailing yacht as part of the Classe IMER project.</strong></p><br><p>Within the CT Mer Forte design office, I contributed to the design of a sailing yacht developed in accordance with the Classe IMER rules. My main assignment was to develop and complete the 3D model using 3DEXPERIENCE, adapting components from previous projects while also designing new parts.</p><br><p>I worked on several key components of the yacht, including the structure, keel, rigging, rudders, deck fittings and bowsprit. Some components, such as the rudders and bowsprit, were also parametrised to reproduce their movements.</p><br><p>This experience strengthened my skills in 3D design and modelling while giving me first-hand experience of the work carried out within a naval engineering design office and the offshore racing environment.</p><div class="tags"><span class="tag">3DEXPERIENCE</span><span class="tag">3D Modelling</span><span class="tag">Naval Design</span><span class="tag">Parametric Design</span></div><a class="report" href="reports/Rapport_Mer_Forte.pdf" target="_blank" rel="noopener">View internship report ↗</a></div><div class="exp-image"><img src="images/experience/ct-mer-forte-portfolio.png" alt="CT Mer Forte — Classe IMER"></div></div></div>
 </div></div></div></div></section>
 
 <section id="projects" class="alt"><div class="container"><div class="section-head"><div class="section-num">04 — Projects</div><div><h2>Projects</h2><p>A selection of technical projects spanning design, simulation and experimentation.</p></div></div><div class="projects">
